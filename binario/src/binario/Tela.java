@@ -99,7 +99,7 @@ public class Tela extends javax.swing.JFrame {
             
             
             tabelaBinario.setColumnSelectionAllowed(true);
-            //tabelaBinario.addColumnSelectionInterval(0, 1);
+            
             tabelaBinario.setRowSelectionInterval(0, 0);
             tabelaBinario.setColumnSelectionInterval(faltaP32, bin.length()-1);
             
@@ -127,10 +127,7 @@ public class Tela extends javax.swing.JFrame {
                 evt.getKeyChar() == '2' || evt.getKeyChar() == '3' || 
                 evt.getKeyChar() == '4' || evt.getKeyChar() == '5' || 
                 evt.getKeyChar() == '6' || evt.getKeyChar() == '7' || 
-                evt.getKeyChar() == '8' || evt.getKeyChar() == '9' || 
-                evt.getKeyCode() == java.awt.event.KeyEvent.VK_CONTROL || 
-                evt.getKeyCode() == java.awt.event.KeyEvent.VK_V || 
-                evt.getKeyCode() == java.awt.event.KeyEvent.VK_C){
+                evt.getKeyChar() == '8' || evt.getKeyChar() == '9'){
             campo.setText(campo.getText().replace("v", ""));
             campo.setText(campo.getText().replace("V", ""));
             campo.setText(campo.getText().replace("c", ""));
